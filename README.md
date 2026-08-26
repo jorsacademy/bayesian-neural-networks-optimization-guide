@@ -34,6 +34,8 @@ A BNN is usually **not the optimization solver**. It provides predictive uncerta
 - **Pyomo / Gurobi** — decision-optimization layer
 - **laplace-torch** — post-hoc Laplace approximation for trained PyTorch models
 
+For the detailed library-role matrix, integration patterns, and problem-to-stack recommendations, see [`TOOLS_AND_USE_CASES.md`](./TOOLS_AND_USE_CASES.md).
+
 ## Key decision formulations
 
 Posterior predictive distribution:
@@ -101,6 +103,7 @@ See [`notebooks/README.md`](./notebooks/README.md) for details.
 ## Theory and model taxonomy
 
 - [`BNN_FAMILIES.md`](./BNN_FAMILIES.md) — BNN family taxonomy and practical selection rules.
+- [`TOOLS_AND_USE_CASES.md`](./TOOLS_AND_USE_CASES.md) — software stack, integration patterns, and IE/OR use-case matrix.
 - [`THEORETICAL_FOUNDATIONS.md`](./THEORETICAL_FOUNDATIONS.md) — Bayesian inference, uncertainty decomposition, SAA, CVaR, chance constraints, VI vs NUTS, and validation.
 - [`MULTI_OUTPUT_MOBO_FOUNDATIONS.md`](./MULTI_OUTPUT_MOBO_FOUNDATIONS.md) — multi-output modeling, Pareto dominance, hypervolume, qLogEHVI.
 - [`LAPLACE_FOUNDATIONS.md`](./LAPLACE_FOUNDATIONS.md) — post-hoc Laplace approximation and its limitations.
