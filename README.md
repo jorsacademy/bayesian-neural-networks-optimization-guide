@@ -86,7 +86,7 @@ Do not default to a full BNN. For small expensive datasets, a GP is often the be
 
 ## Applied examples
 
-The `notebooks/` directory contains nine workflows:
+The `notebooks/` directory contains ten workflows:
 
 1. `bnn_demand_inventory_optimization.ipynb` — BNN demand scenarios → SAA → Pyomo.
 2. `bnn_cvar_chance_constrained_production.ipynb` — expected cost vs CVaR vs chance constraints.
@@ -97,6 +97,7 @@ The `notebooks/` directory contains nine workflows:
 7. `multi_output_bnn_multi_objective_botorch.ipynb` — quality/energy/cycle-time Pareto optimization with qLogEHVI.
 8. `hierarchical_bnn_partial_pooling_capacity_allocation.md` — multi-plant partial pooling → stochastic capacity allocation.
 9. `laplace_approximation_pytorch_stochastic_capacity.ipynb` — trained PyTorch NN → Laplace approximation → capacity scenarios → Pyomo.
+10. `causal_tdnn_bnn_decision_quality/` — naive/AR/causal TDNN/BNN forecasting → SAA → forecast accuracy vs downstream decision quality.
 
 See [`notebooks/README.md`](./notebooks/README.md) for details.
 
