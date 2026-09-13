@@ -1,6 +1,6 @@
 # Applied Notebooks and Guides
 
-This directory contains nine applied workflows showing how Bayesian neural networks and related uncertainty-aware models connect to industrial-engineering and operations-research decisions.
+This directory contains ten applied workflows showing how Bayesian neural networks and related uncertainty-aware models connect to industrial-engineering and operations-research decisions.
 
 ## 1. BNN Demand Uncertainty + Inventory / Production Optimization
 
@@ -132,6 +132,26 @@ Pyomo stochastic planning
 ```
 
 This is the pragmatic post-hoc uncertainty workflow for an already trained neural model.
+
+## 10. Causal TDNN vs BNN: Forecast Accuracy vs Decision Quality
+
+[`causal_tdnn_bnn_decision_quality/`](./causal_tdnn_bnn_decision_quality/)
+
+```text
+Historical demand
+    ↓
+chronological train / validation / test
+    ↓
+Naive / Ridge AR / Causal TDNN / BNN
+    ↓
+point forecasts + BNN posterior scenarios
+    ↓
+forecast metrics + downstream inventory cost / regret
+```
+
+This workflow converts a standalone TDNN demo into a decision-focused benchmark. The TDNN uses strictly left-padded dilated convolutions and includes a gradient-based causality invariant. Scaling is fitted only on training history, the test block is untouched, and the deep model must beat classical baselines rather than only fit synthetic data.
+
+The BNN sees the same 28-lag information and generates posterior predictive scenarios. Those scenarios feed a single-period production/inventory SAA model. The workflow reports MAE/RMSE/WAPE separately from realized cost, perfect-information regret, and service level, testing whether lower point-forecast error actually implies a better operational decision. One SAA instance is independently verified with Pyomo + HiGHS.
 
 ## Installation
 
