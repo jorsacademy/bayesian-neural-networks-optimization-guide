@@ -126,3 +126,22 @@ A mathematically valid uncertainty model is not automatically valid for a specif
 - computation and update cost.
 
 The objective is not to use the most sophisticated Bayesian model. It is to use the simplest uncertainty model that is calibrated enough to improve downstream decisions.
+
+## Start here: a PyTorch-only BNN tutorial
+
+[`notebooks/bnn_from_scratch_tutorial.ipynb`](notebooks/bnn_from_scratch_tutorial.ipynb)
+introduces reparameterized Gaussian weights, analytic KL, correctly normalized
+Monte Carlo ELBO, and epistemic versus total predictive variance. It includes
+executed training and uncertainty figures and a held-out synthetic check.
+The accompanying `notebooks/bnn_from_scratch.py` is a corrected adaptation of
+cell 12 in `im_rl.ipynb`; it uses no Pyro or optimization solver.
+
+```bash
+python -m pip install -r requirements-tutorial.txt
+python -m pytest -q
+```
+
+Open the tutorial from either the repository root or `notebooks/`. Its noise
+standard deviation is assumed known. Bands are mean ±2 standard deviations,
+not a guarantee of 95% coverage, and extrapolation is not validated by the
+in-range test sample. CI tests the mathematics and executes the notebook.

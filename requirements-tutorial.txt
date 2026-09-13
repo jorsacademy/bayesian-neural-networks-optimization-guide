@@ -1,0 +1,8 @@
+# Minimal environment for the PyTorch-only introductory notebook and tests.
+torch>=2.2
+numpy>=1.24
+matplotlib>=3.8
+nbformat>=5.9
+nbclient>=0.10
+ipykernel>=6.29
+pytest>=8
