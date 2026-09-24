@@ -1,4 +1,10 @@
-# Bayesian Neural Networks for Optimization and Operations Research
+# Bayesian Neural Networks Optimization Guide
+
+<!-- portfolio-umbrella:start -->
+## Portfolio role
+
+This repository is intentionally maintained as a standalone primary repository in the consolidated Jors Academy portfolio. It is not used as a container for other projects.
+<!-- portfolio-umbrella:end -->
 
 An applied guide to using Bayesian neural networks (BNNs) and related uncertainty-aware models in optimization, industrial engineering, and operations research.
 
