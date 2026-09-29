@@ -6,6 +6,10 @@
 This repository is intentionally maintained as a standalone primary repository in the consolidated Jors Academy portfolio. It is not used as a container for other projects.
 <!-- portfolio-umbrella:end -->
 
+## Language edition
+
+Other language edition: [Bayesçi Sinir Ağları Optimizasyon Rehberi](https://github.com/jorsacademy/bayesci-sinir-aglari-optimizasyon-rehberi).
+
 An applied guide to using Bayesian neural networks (BNNs) and related uncertainty-aware models in optimization, industrial engineering, and operations research.
 
 The core architecture is:
